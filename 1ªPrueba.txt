@@ -1,0 +1,8 @@
+1-- $awk  '{print $0}' council-voting-records.csv  > resultado.txt
+-  cat council-voting-records.csv > resultado.txt
+
+2-$awk '/In Favour/ {print}' council-voting-records.csv  > resultado.txt
+3-$awk '{sum += $3} END {print sum}' council-voting-records.csv
+
+4-
+5-sort -t ";" -k 2 -n council-voting-records.csv
